@@ -11,7 +11,7 @@ class Entreprise extends Model
     protected $guarded = [];
 
     public function clients() {
-        return $this->hasMany('Client');
+        return $this->hasMany('App\Client');
     }
 }
 

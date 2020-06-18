@@ -37,13 +37,13 @@
                   <a class="nav-link active" href="/">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about">A propos</a>
+                    <a class="nav-link" href="/about">A propos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact">Contat</a>
+                  <a class="nav-link" href="/contact">Contat</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="clients">Clients</a>
+                    <a class="nav-link" href="/clients">voir les Clients</a>
                 </li>
 
               </ul>

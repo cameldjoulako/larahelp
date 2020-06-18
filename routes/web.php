@@ -22,12 +22,17 @@ Route::get('/', function () {
 Route::get('about', function () {
     return view('about');
 });
-
-/*Racoursi */
 Route::view('contact', 'contact');
-Route::view('/admin/post', 'admin');
+Route::view('admin/post', 'admin');
 
-/* route avec passage des données dans un tableau */
-Route::get('/clients', 'ClientsController@list');
+/* route pour les clients*/
+Route::get('clients', 'ClientsController@index');
+Route::get('client/create', 'ClientsController@create');
+Route::post('clients', 'ClientsController@store');
+Route::get('clients/{client}', 'ClientsController@show');
+Route::get('clients/{client}/edit', 'ClientsController@edit');
+Route::patch('clients/{client}', 'ClientsController@update');
+Route::delete('clients/{client}', 'ClientsController@destroy');
 
-Route::post('/clients', 'ClientsController@store');
+/** les routes précedentes peuvent etre reduis à */
+//Route::resource('clients', 'ClientsController');
